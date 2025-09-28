@@ -1,0 +1,19 @@
+# Copyright 2025 - TODAY, Cristiano Mafra Junior <cristiano.mafra@escodoo.com.br>
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+{
+    "name": "Payroll Attendance Report",
+    "summary": "Payslip Attendance on Report",
+    "version": "16.0.1.0.0",
+    "author": "Escodoo",
+    "license": "AGPL-3",
+    "website": "https://github.com/Escodoo/projet-addons",
+    "depends": [
+        "payroll",
+        "hr_attendance",
+    ],
+    "data": [
+        "data/report_action.xml",
+        "report/report_templates.xml",
+    ],
+    "installable": True,
+}

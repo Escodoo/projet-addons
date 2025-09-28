@@ -1,0 +1,177 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* project_hr_contract_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-23 16:52+0000\n"
+"PO-Revision-Date: 2025-10-23 16:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: project_hr_contract_report
+#: model:ir.actions.report,print_report_name:project_hr_contract_report.action_report_hr_contract_br
+msgid "'Contract - %s' % (object.name or 'Sem referência')"
+msgstr ""
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid ", Nº"
+msgstr ""
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>Account / Check Digit</strong>"
+msgstr "<strong>Conta / DV</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>Account Type</strong>"
+msgstr "<strong>Tipo de conta</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>Bank</strong>"
+msgstr "<strong>Banco</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>Branch / Check Digit</strong>"
+msgstr "<strong>Branch / Check Digit</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>CEP</strong>"
+msgstr "<strong>CEP</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>CPF</strong>"
+msgstr "<strong>CPF</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>Date of Admission (Hiring Date)</strong>"
+msgstr "<strong>Data de admissão</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>Date of Birth</strong>"
+msgstr "<strong>Data de Nascimento</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>Education Level</strong>"
+msgstr "<strong>Escolaridade</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>Employee:</strong>"
+msgstr "<strong>Empregado:</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>Employer:</strong>"
+msgstr "<strong>Empregador:</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>Marital Status</strong>"
+msgstr "<strong>Estado civil</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>Municipality</strong>"
+msgstr "<strong>Município</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>Name</strong>"
+msgstr "<strong>Nome</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>Nationality</strong>"
+msgstr "<strong>Nacionalidade</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>Neighborhood</strong>"
+msgstr "<strong>Bairro</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>Phone</strong>"
+msgstr "<strong>Telefone</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>Position</strong>"
+msgstr "<strong>Cargo</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>Salary</strong>"
+msgstr "<strong>Salário</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "<strong>Street Address</strong>"
+msgstr "<strong>Logradouro</strong>"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "BANK DETAILS"
+msgstr "DADOS BANCÁRIOS"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "CONTRACT DETAILS"
+msgstr "DADOS CONTRATUAIS"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "DADOS PESSOAIS"
+msgstr ""
+
+#. module: project_hr_contract_report
+#: model:ir.model.fields,field_description:project_hr_contract_report.field_resource_calendar_attendance__day_period
+msgid "Day Period"
+msgstr "Período do Dia"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "Employee"
+msgstr "Empregado"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "Employer"
+msgstr "Empregador"
+
+#. module: project_hr_contract_report
+#: model:ir.actions.report,name:project_hr_contract_report.action_report_hr_contract_br
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "Employment Contract"
+msgstr "Contrato de Trabalho"
+
+#. module: project_hr_contract_report
+#: model:ir.model.fields.selection,name:project_hr_contract_report.selection__resource_calendar_attendance__day_period__night
+msgid "Night"
+msgstr "Noite"
+
+#. module: project_hr_contract_report
+#: model:ir.model,name:project_hr_contract_report.model_resource_calendar_attendance
+msgid "Work Detail"
+msgstr "Detalhes do Trabalho"
+
+#. module: project_hr_contract_report
+#: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
+msgid "— CNPJ/CPF:"
+msgstr ""
