@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_contract_template_user,hr.contract.template.user,project_hr_contract_report.model_hr_contract_template,base.group_user,1,0,0,0
+access_hr_contract_template_manager,hr.contract.template.manager,project_hr_contract_report.model_hr_contract_template,hr.group_hr_manager,1,1,1,1
+access_hr_contract_template_wizard,hr.contract.template.wizard,project_hr_contract_report.model_hr_contract_template_wizard,base.group_user,1,1,1,1
+access_hr_contract_signed_document_user,hr.contract.signed.document.user,project_hr_contract_report.model_hr_contract_signed_document,base.group_user,1,1,1,1
+access_hr_contract_signed_document_manager,hr.contract.signed.document.manager,project_hr_contract_report.model_hr_contract_signed_document,hr.group_hr_manager,1,1,1,1

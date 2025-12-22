@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record id="hr_contract_template_default" model="hr.contract.template">
+    <field name="name">Contrato de Trabalho Padrão</field>
+    <field name="active">True</field>
+    <field
+            name="report_template_id"
+            eval="ref('project_hr_contract_report.report_hr_contract_br')"
+        />
+    <field name="description">Modelo padrão para contratos de trabalho</field>
+  </record>
+</odoo>

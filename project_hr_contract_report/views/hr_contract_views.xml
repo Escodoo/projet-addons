@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record id="action_hr_contract_template_wizard" model="ir.actions.act_window">
+    <field name="name">Select Template</field>
+    <field name="res_model">hr.contract.template.wizard</field>
+    <field name="view_mode">form</field>
+    <field name="target">new</field>
+  </record>
+
+  <record id="action_hr_contract_template" model="ir.actions.act_window">
+    <field name="name">Contract Templates</field>
+    <field name="res_model">hr.contract.template</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">
+        Create your first contract template!
+      </p>
+      <p>
+        Contract templates allow you to customize the appearance and content
+        of employment contracts when printing them.
+      </p>
+    </field>
+  </record>
+
+  <record id="view_contract_form_inherit" model="ir.ui.view">
+    <field name="name">hr.contract.form.inherit</field>
+    <field name="model">hr.contract</field>
+    <field name="inherit_id" ref="hr_contract.hr_contract_view_form" />
+    <field name="arch" type="xml">
+      <xpath expr="//page[@name='information']" position="after">
+        <page string="Signed Contracts" name="signed_contracts">
+          <field
+                        name="signed_document_ids"
+                        nolabel="1"
+                        context="{'default_contract_id': id}"
+                    >
+            <tree create="1" delete="1">
+              <field name="name" />
+              <field name="template_id" />
+              <field name="date_signed" />
+              <field name="attachment_filename" />
+            </tree>
+            <form string="Signed Document">
+              <sheet>
+                <group>
+                  <group>
+                    <field name="name" />
+                    <field name="contract_id" readonly="1" />
+                    <field name="template_id" options="{'no_create': True}" />
+                    <field name="date_signed" />
+                  </group>
+                  <group>
+                    <field name="attachment" filename="attachment_filename" />
+                    <field name="attachment_filename" invisible="1" />
+                    <field
+                                            name="notes"
+                                            placeholder="Additional notes about this signed document..."
+                                        />
+                  </group>
+                </group>
+              </sheet>
+            </form>
+          </field>
+        </page>
+      </xpath>
+      <xpath expr="//header" position="inside">
+        <button
+                    name="%(action_hr_contract_template_wizard)d"
+                    string="Print Contract"
+                    type="action"
+                    class="oe_highlight"
+                    context="{'default_contract_id': id}"
+                />
+      </xpath>
+    </field>
+  </record>
+
+  <record id="view_hr_contract_template_tree" model="ir.ui.view">
+    <field name="name">hr.contract.template.tree</field>
+    <field name="model">hr.contract.template</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name" />
+        <field name="active" widget="boolean_toggle" />
+      </tree>
+    </field>
+  </record>
+
+  <record id="view_hr_contract_template_form" model="ir.ui.view">
+    <field name="name">hr.contract.template.form</field>
+    <field name="model">hr.contract.template</field>
+    <field name="arch" type="xml">
+      <form string="Contract Template">
+        <header>
+          <button
+                        name="action_duplicate"
+                        string="Duplicate"
+                        type="object"
+                        class="oe_highlight"
+                    />
+        </header>
+        <sheet>
+          <group>
+            <group>
+              <field name="name" />
+              <field name="active" />
+            </group>
+            <group>
+              <field name="report_template_id" />
+            </group>
+          </group>
+          <group>
+            <field name="description" placeholder="Description of this template..." />
+          </group>
+          <notebook>
+            <page string="Help" name="help">
+              <div style="margin-top: 4px;">
+                <h3>Contract Template Formula Definition (QWeb)</h3>
+                <p>
+                  In QWeb template definition, you can write any code as you would write in QWeb.
+                  Any mathematical operation or QWeb function is supported.
+                </p>
+                <p>
+                  The following objects and variables are available to use in contract QWeb templates.
+                </p>
+                <ul>
+                  <li>
+                    <code
+                                        >contract:</code> contains current contract object data (hr.contract)
+                  </li>
+                  <li>
+                    <code>company:</code> contains company data (res.company)
+                  </li>
+                  <li>
+                    <code
+                                        >emp:</code> contains current employee object data (hr.employee)
+                  </li>
+                  <li>
+                    <code>home:</code> contains employee home address data (res.partner)
+                  </li>
+                  <li>
+                    <code
+                                        >bank:</code> contains employee bank account data (res.partner.bank)
+                  </li>
+                  <li>
+                    <code>o:</code> alias for contract object (hr.contract)
+                  </li>
+                </ul>
+                <h3>Common Contract Fields (contract)</h3>
+                <ul>
+                  <li>
+                    <code>contract.name</code> - Contract name/reference
+                  </li>
+                  <li>
+                    <code>contract.date_start</code> - Start date
+                  </li>
+                  <li>
+                    <code>contract.date_end</code> - End date
+                  </li>
+                  <li>
+                    <code>contract.wage</code> - Salary
+                  </li>
+                  <li>
+                    <code>contract.job_id.name</code> - Job position name
+                  </li>
+                  <li>
+                    <code>contract.employee_id</code> - Employee
+                  </li>
+                  <li>
+                    <code>contract.company_id</code> - Company
+                  </li>
+                </ul>
+                <h3>Common Employee Fields (emp)</h3>
+                <ul>
+                  <li>
+                    <code>emp.name</code> - Full name
+                  </li>
+                  <li>
+                    <code>emp.cpf</code> - CPF (Brazilian tax ID)
+                  </li>
+                  <li>
+                    <code>emp.birthday</code> - Date of birth
+                  </li>
+                  <li>
+                    <code>emp.marital</code> - Marital status
+                  </li>
+                  <li>
+                    <code>emp.country_of_birth</code> - Nationality
+                  </li>
+                  <li>
+                    <code>emp.certificate</code> - Education level
+                  </li>
+                  <li>
+                    <code>emp.address_home_id</code> - Home address
+                  </li>
+                  <li>
+                    <code>emp.bank_account_id</code> - Bank account
+                  </li>
+                </ul>
+              </div>
+            </page>
+          </notebook>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_hr_contract_template_search" model="ir.ui.view">
+    <field name="name">hr.contract.template.search</field>
+    <field name="model">hr.contract.template</field>
+    <field name="arch" type="xml">
+      <search string="Contract Templates">
+        <field name="name" />
+        <filter string="Active" name="active" domain="[('active', '=', True)]" />
+        <filter string="Inactive" name="inactive" domain="[('active', '=', False)]" />
+      </search>
+    </field>
+  </record>
+
+  <record id="view_hr_contract_template_wizard_form" model="ir.ui.view">
+    <field name="name">hr.contract.template.wizard.form</field>
+    <field name="model">hr.contract.template.wizard</field>
+    <field name="arch" type="xml">
+      <form string="Select Contract Template">
+        <group>
+          <field name="contract_id" readonly="1" />
+          <field name="template_id" options="{'no_create': True}" />
+        </group>
+        <footer>
+          <button
+                        string="Print"
+                        name="action_print"
+                        type="object"
+                        class="btn-primary"
+                    />
+          <button string="Cancel" class="btn-secondary" special="cancel" />
+        </footer>
+      </form>
+    </field>
+  </record>
+
+  <menuitem
+        id="menu_hr_contract_template_root"
+        name="Contract Templates"
+        parent="hr.menu_human_resources_configuration"
+        action="action_hr_contract_template"
+        sequence="100"
+    />
+</odoo>
