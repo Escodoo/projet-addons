@@ -6,11 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 15:05+0000\n"
-"PO-Revision-Date: 2025-12-22 15:05+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -19,267 +16,262 @@ msgstr ""
 #. module: project_hr_contract_report
 #: model:ir.actions.report,print_report_name:project_hr_contract_report.action_report_hr_contract_br
 msgid "'Contract - %s' % (object.name or 'Sem referência')"
-msgstr "'Contrato - %s' % (object.name or 'Sem referência')"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid ", Nº"
-msgstr ", Nº"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid ""
 "<code>bank:</code> contains employee bank account data (res.partner.bank)"
 msgstr ""
-"<code>bank:</code> contém dados da conta bancária do funcionário (res."
-"partner.bank)"
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "<code>company:</code> contains company data (res.company)"
-msgstr "<code>company:</code> contém dados da empresa (res.company)"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "<code>contract.company_id</code> - Company"
-msgstr "<code>contract.company_id</code> - Empresa"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "<code>contract.date_end</code> - End date"
-msgstr "<code>contract.date_end</code> - Data de término"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "<code>contract.date_start</code> - Start date"
-msgstr "<code>contract.date_start</code> - Data de início"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "<code>contract.employee_id</code> - Employee"
-msgstr "<code>contract.employee_id</code> - Funcionário"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "<code>contract.job_id.name</code> - Job position name"
-msgstr "<code>contract.job_id.name</code> - Nome do cargo"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "<code>contract.name</code> - Contract name/reference"
-msgstr "<code>contract.name</code> - Nome/Referência do contrato"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "<code>contract.wage</code> - Salary"
-msgstr "<code>contract.wage</code> - Salário"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid ""
 "<code>contract:</code> contains current contract object data (hr.contract)"
 msgstr ""
-"<code>contract:</code> contém dados do objeto contrato atual (hr.contract)"
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "<code>emp.address_home_id</code> - Home address"
-msgstr "<code>emp.address_home_id</code> - Endereço residencial"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "<code>emp.bank_account_id</code> - Bank account"
-msgstr "<code>emp.bank_account_id</code> - Conta bancária"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "<code>emp.birthday</code> - Date of birth"
-msgstr "<code>emp.birthday</code> - Data de nascimento"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "<code>emp.certificate</code> - Education level"
-msgstr "<code>emp.certificate</code> - Escolaridade"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "<code>emp.country_of_birth</code> - Nationality"
-msgstr "<code>emp.country_of_birth</code> - Nacionalidade"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "<code>emp.cpf</code> - CPF (Brazilian tax ID)"
-msgstr "<code>emp.cpf</code> - CPF (Cadastro de Pessoa Física)"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "<code>emp.marital</code> - Marital status"
-msgstr "<code>emp.marital</code> - Estado civil"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "<code>emp.name</code> - Full name"
-msgstr "<code>emp.name</code> - Nome completo"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "<code>emp:</code> contains current employee object data (hr.employee)"
-msgstr "<code>emp:</code> contém dados do funcionário atual (hr.employee)"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "<code>home:</code> contains employee home address data (res.partner)"
 msgstr ""
-"<code>home:</code> contém dados do endereço residencial do funcionário (res."
-"partner)"
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "<code>o:</code> alias for contract object (hr.contract)"
-msgstr "<code>o:</code> alias para o objeto contrato (hr.contract)"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>Account / Check Digit</strong>"
-msgstr "<strong>Conta / DV</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>Account Type</strong>"
-msgstr "<strong>Tipo de conta</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>Bank</strong>"
-msgstr "<strong>Banco</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>Branch / Check Digit</strong>"
-msgstr "<strong>Agência / DV</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>CEP</strong>"
-msgstr "<strong>CEP</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>CPF</strong>"
-msgstr "<strong>CPF</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>Date of Admission (Hiring Date)</strong>"
-msgstr "<strong>Data de admissão</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>Date of Birth</strong>"
-msgstr "<strong>Data de Nascimento</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>Education Level</strong>"
-msgstr "<strong>Escolaridade</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>Employee:</strong>"
-msgstr "<strong>Empregado:</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>Employer:</strong>"
-msgstr "<strong>Empregador:</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>Marital Status</strong>"
-msgstr "<strong>Estado civil</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>Municipality</strong>"
-msgstr "<strong>Município</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>Name</strong>"
-msgstr "<strong>Nome</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>Nationality</strong>"
-msgstr "<strong>Nacionalidade</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>Neighborhood</strong>"
-msgstr "<strong>Bairro</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>Phone</strong>"
-msgstr "<strong>Telefone</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>Position</strong>"
-msgstr "<strong>Cargo</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>Salary</strong>"
-msgstr "<strong>Salário</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "<strong>Street Address</strong>"
-msgstr "<strong>Logradouro</strong>"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template__active
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_search
 msgid "Active"
-msgstr "Ativo"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_contract_form_inherit
 msgid "Additional notes about this signed document..."
-msgstr "Observações adicionais sobre este documento assinado..."
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "BANK DETAILS"
-msgstr "DADOS BANCÁRIOS"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "CONTRACT DETAILS"
-msgstr "DADOS CONTRATUAIS"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_wizard_form
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "Common Contract Fields (contract)"
-msgstr "Campos Comuns do Contrato (contract)"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "Common Employee Fields (emp)"
-msgstr "Campos Comuns do Funcionário (emp)"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model,name:project_hr_contract_report.model_hr_contract
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_signed_document__contract_id
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template_wizard__contract_id
 msgid "Contract"
-msgstr "Contrato"
+msgstr ""
 
 #. module: project_hr_contract_report
 #. odoo-python
@@ -288,24 +280,24 @@ msgstr "Contrato"
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 #, python-format
 msgid "Contract Template"
-msgstr "Modelo de Contrato"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "Contract Template Formula Definition (QWeb)"
-msgstr "Definição da Fórmula de Modelo de Contrato (QWeb)"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model,name:project_hr_contract_report.model_hr_contract_template_wizard
 msgid "Contract Template Selection Wizard"
-msgstr "Assistente de Seleção de Modelo de Contrato"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.actions.act_window,name:project_hr_contract_report.action_hr_contract_template
 #: model:ir.ui.menu,name:project_hr_contract_report.menu_hr_contract_template_root
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_search
 msgid "Contract Templates"
-msgstr "Modelos de Contrato"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.actions.act_window,help:project_hr_contract_report.action_hr_contract_template
@@ -313,69 +305,67 @@ msgid ""
 "Contract templates allow you to customize the appearance and content\n"
 "        of employment contracts when printing them."
 msgstr ""
-"Os modelos de contrato permitem personalizar a aparência e o conteúdo\n"
-"        dos contratos de trabalho ao imprimi-los."
 
 #. module: project_hr_contract_report
 #: model_terms:ir.actions.act_window,help:project_hr_contract_report.action_hr_contract_template
 msgid "Create your first contract template!"
-msgstr "Crie seu primeiro modelo de contrato!"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_signed_document__create_uid
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template__create_uid
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template_wizard__create_uid
 msgid "Created by"
-msgstr "Criado por"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_signed_document__create_date
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template__create_date
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template_wizard__create_date
 msgid "Created on"
-msgstr "Criado em"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "DADOS PESSOAIS"
-msgstr "DADOS PESSOAIS"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_signed_document__date_signed
 msgid "Date Signed"
-msgstr "Data de Assinatura"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,help:project_hr_contract_report.field_hr_contract_signed_document__date_signed
 msgid "Date when the contract was signed"
-msgstr "Data em que o contrato foi assinado"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_resource_calendar_attendance__day_period
 msgid "Day Period"
-msgstr "Período do Dia"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template__description
 msgid "Description"
-msgstr "Descrição"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "Description of this template..."
-msgstr "Descrição deste modelo..."
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_signed_document__display_name
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template__display_name
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template_wizard__display_name
 msgid "Display Name"
-msgstr "Nome de Exibição"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_signed_document__name
 msgid "Document Name"
-msgstr "Nome do Documento"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
@@ -385,77 +375,73 @@ msgstr ""
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "Employee"
-msgstr "Empregado"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "Employer"
-msgstr "Empregador"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.actions.report,name:project_hr_contract_report.action_report_hr_contract_br
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "Employment Contract"
-msgstr "Contrato de Trabalho"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_signed_document__attachment_filename
 msgid "Filename"
-msgstr "Nome do Arquivo"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid "Help"
-msgstr "Ajuda"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_signed_document__id
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template__id
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template_wizard__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
 msgid ""
-"In QWeb template definition, you can write any code as you would write in "
-"QWeb.\n"
+"In QWeb template definition, you can write any code as you would write in QWeb.\n"
 "                  Any mathematical operation or QWeb function is supported."
 msgstr ""
-"Na definição do template QWeb, você pode escrever qualquer código como "
-"escreveria em QWeb.\n"
-"                  Qualquer operação matemática ou função QWeb é suportada."
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_search
 msgid "Inactive"
-msgstr "Inativo"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_signed_document____last_update
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template____last_update
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template_wizard____last_update
 msgid "Last Modified on"
-msgstr "Última Modificação em"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_signed_document__write_uid
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template__write_uid
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template_wizard__write_uid
 msgid "Last Updated by"
-msgstr "Última Atualização por"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_signed_document__write_date
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template__write_date
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template_wizard__write_date
 msgid "Last Updated on"
-msgstr "Última Atualização em"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields.selection,name:project_hr_contract_report.selection__resource_calendar_attendance__day_period__night
 msgid "Night"
-msgstr "Noite"
+msgstr ""
 
 #. module: project_hr_contract_report
 #. odoo-python
@@ -467,80 +453,80 @@ msgstr ""
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_signed_document__notes
 msgid "Notes"
-msgstr "Observações"
+msgstr ""
 
 #. module: project_hr_contract_report
 #. odoo-python
 #: code:addons/project_hr_contract_report/models/hr_contract_template.py:0
-#, fuzzy, python-format
+#, python-format
 msgid "Original report action not found for this template."
-msgstr "Descrição deste modelo..."
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_wizard_form
 msgid "Print"
-msgstr "Imprimir"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_contract_form_inherit
 msgid "Print Contract"
-msgstr "Imprimir Contrato"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template__report_template_id
 msgid "Report Template"
-msgstr "Modelo de Relatório"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_wizard_form
 msgid "Select Contract Template"
-msgstr "Selecionar Modelo de Contrato"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.actions.act_window,name:project_hr_contract_report.action_hr_contract_template_wizard
 msgid "Select Template"
-msgstr "Selecionar Modelo"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model,name:project_hr_contract_report.model_hr_contract_signed_document
 msgid "Signed Contract Document"
-msgstr "Documento de Contrato Assinado"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_contract_form_inherit
 msgid "Signed Contracts"
-msgstr "Contratos Assinados"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_signed_document__attachment
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_contract_form_inherit
 msgid "Signed Document"
-msgstr "Documento Assinado"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract__signed_document_ids
 msgid "Signed Documents"
-msgstr "Documentos Assinados"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template_wizard__template_id
 msgid "Template"
-msgstr "Modelo"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template__name
 msgid "Template Name"
-msgstr "Nome do Modelo"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_signed_document__template_id
 msgid "Template Used"
-msgstr "Modelo Utilizado"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,help:project_hr_contract_report.field_hr_contract_signed_document__template_id
 msgid "Template that was used to generate this signed document"
-msgstr "Modelo que foi usado para gerar este documento assinado"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.view_hr_contract_template_form
@@ -548,47 +534,18 @@ msgid ""
 "The following objects and variables are available to use in contract QWeb "
 "templates."
 msgstr ""
-"Os seguintes objetos e variáveis estão disponíveis para uso nos templates "
-"QWeb de contrato."
 
 #. module: project_hr_contract_report
 #: model:ir.model.fields,help:project_hr_contract_report.field_hr_contract_signed_document__attachment
 msgid "The signed contract document file"
-msgstr "O arquivo do documento de contrato assinado"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model:ir.model,name:project_hr_contract_report.model_resource_calendar_attendance
 msgid "Work Detail"
-msgstr "Detalhes do Trabalho"
+msgstr ""
 
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "— CNPJ/CPF:"
-msgstr "— CNPJ/CPF:"
-
-#~ msgid "Default"
-#~ msgstr "Padrão"
-
-#~ msgid "Default Template"
-#~ msgstr "Modelo Padrão"
-
-#~ msgid "Employee Contract"
-#~ msgstr "Contrato do Funcionário"
-
-#~ msgid ""
-#~ "If checked, this template will be used as default when printing contracts"
-#~ msgstr ""
-#~ "Se marcado, este modelo será usado como padrão ao imprimir contratos"
-
-#~ msgid "QWeb template used for printing this contract"
-#~ msgstr "Modelo QWeb usado para imprimir este contrato"
-
-#~ msgid "Set as Default"
-#~ msgstr "Definir como Padrão"
-
-#~ msgid ""
-#~ "Signed contracts and documents related to this employment contract (e.g., "
-#~ "employment contract, terms of use, etc.)"
-#~ msgstr ""
-#~ "Contratos e documentos assinados relacionados a este contrato de trabalho "
-#~ "(ex.: contrato de trabalho, termos de uso, etc.)"
+msgstr ""
