@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <template id="report_hr_contract_br">
+    <t t-call="web.html_container">
+      <t t-foreach="docs" t-as="contract">
+        <t t-call="web.external_layout_standard">
+          <t t-set="o" t-value="contract" />
+          <t t-set="company" t-value="contract.company_id" />
+          <t t-set="emp" t-value="contract.employee_id" />
+          <t t-set="home" t-value="contract.employee_id.address_home_id" />
+          <t t-set="bank" t-value="contract.employee_id.bank_account_id" />
+
+          <div class="page">
+            <h3 class="text-center">Employment Contract</h3>
+
+            <p>
+              <strong>Employer:</strong>
+              <t t-esc="company.name" />
+              <t t-if="company.partner_id and company.partner_id.vat">
+                — CNPJ/CPF: <t t-esc="company.partner_id.vat" />
+              </t>
+            </p>
+            <p>
+              <strong>Employee:</strong>
+              <t t-esc="emp.name" />
+            </p>
+
+            <h5 style="margin-top:18px;">DADOS PESSOAIS</h5>
+            <table class="table table-sm o_main_table">
+              <tbody>
+                <tr>
+                  <td style="width:28%;"><strong>Name</strong></td>
+                  <td t-esc="emp.name or '-'" />
+                </tr>
+                <tr>
+                  <td><strong>CPF</strong></td>
+                  <td t-esc="emp.cpf or '-'" />
+                </tr>
+                <tr>
+                  <td><strong>Date of Birth</strong></td>
+                  <td><span t-field="emp.birthday" t-options="{'widget':'date'}" /></td>
+                </tr>
+                <tr>
+                  <td><strong>Marital Status</strong></td>
+                  <td><span t-field="emp.marital" /></td>
+                </tr>
+                <tr>
+                  <td><strong>Nationality</strong></td>
+                  <td t-esc="emp.country_of_birth or '-'" />
+                </tr>
+                <tr>
+                  <td><strong>Education Level</strong></td>
+                  <td t-esc="emp.certificate or '-'" />
+                </tr>
+                <tr>
+                  <td><strong>Street Address</strong></td>
+                  <td>
+                    <t t-esc="(home and home.street) or '-'" />
+                    <t
+                                            t-if="home and (home._fields.get('street_number') and home.street_number)"
+                                        >
+                      , Nº <t t-esc="home.street_number" />
+                    </t>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Neighborhood</strong></td>
+                  <td
+                                        t-esc="(home and (home.street2 or (home._fields.get('district') and home.district))) or '-'"
+                                    />
+                </tr>
+                <tr>
+                  <td><strong>CEP</strong></td>
+                  <td t-esc="(home and home.zip) or '-'" />
+                </tr>
+                <tr>
+                  <td><strong>Municipality</strong></td>
+                  <td>
+                    <t
+                                            t-esc="(home and (home.city or (home.city_id and home.city_id.name))) or '-'"
+                                        />
+                    <t t-if="home and home.state_id"> / <t
+                                                t-esc="home.state_id.code or home.state_id.name"
+                                            /></t>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Phone</strong></td>
+                  <td>
+                    <t t-esc="(home and home.mobile) or ''" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h5 style="margin-top:14px;">BANK DETAILS</h5>
+            <table class="table table-sm o_main_table">
+              <tbody>
+                <tr>
+                  <td style="width:28%;"><strong>Bank</strong></td>
+                  <td t-esc="(bank and bank.bank_id and bank.bank_id.name) or '-'" />
+                </tr>
+                <tr>
+                  <td><strong>Account Type</strong></td>
+                  <td
+                                        t-esc="(bank and bank._fields.get('acc_type') and bank.acc_type) or '-'"
+                                    />
+                </tr>
+                <tr>
+                  <td><strong>Branch / Check Digit</strong></td>
+                  <td>
+                    <t
+                                            t-esc="(bank and ( (bank._fields.get('branch_number') and bank.branch_number) or (bank._fields.get('l10n_br_branch_number') and bank.l10n_br_branch_number) )) or '-'"
+                                        />
+                    <t
+                                            t-if="bank and ( (bank._fields.get('branch_number') and bank.branch_number) or (bank._fields.get('l10n_br_branch_number') and bank.l10n_br_branch_number) )"
+                                        >
+                      -<t
+                                                t-esc="(bank._fields.get('branch_number_dv') and bank.branch_number_dv) or (bank._fields.get('l10n_br_branch_number_dv') and bank.l10n_br_branch_number_dv) or '-'"
+                                            />
+                    </t>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Account / Check Digit</strong></td>
+                  <td>
+                    <t t-esc="(bank and bank.acc_number) or '-'" />
+                    <t
+                                            t-if="bank and (bank._fields.get('acc_number_dv') or bank._fields.get('l10n_br_acc_number_dv'))"
+                                        >
+                      -<t
+                                                t-esc="(bank._fields.get('acc_number_dv') and bank.acc_number_dv) or (bank._fields.get('l10n_br_acc_number_dv') and bank.l10n_br_acc_number_dv)"
+                                            />
+                    </t>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h5 style="margin-top:14px;">CONTRACT DETAILS</h5>
+            <table class="table table-sm o_main_table">
+              <tbody>
+                <tr>
+                  <td><strong>Date of Admission (Hiring Date)</strong></td>
+                  <td><span
+                                            t-field="contract.date_start"
+                                            t-options="{'widget':'date'}"
+                                        /></td>
+                </tr>
+                <tr>
+                  <td><strong>Position</strong></td>
+                  <td t-esc="(contract.job_id and contract.job_id.name) or '-'" />
+                </tr>
+                <tr>
+                  <td><strong>Salary</strong></td>
+                  <td>
+                    <span
+                                            t-field="contract.wage"
+                                            t-options="{'widget':'monetary','display_currency': contract.company_id.currency_id}"
+                                        />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div style="margin-top:40px;">
+              <div class="row">
+                <div class="col-6" style="text-align:center;">
+                  <div
+                                        style="border-top:1px solid #000; width:100%; margin-top:40px;"
+                                    />
+                  <div><strong t-esc="company.name" /></div>
+                  <div>Employer</div>
+                </div>
+                <div class="col-6" style="text-align:center;">
+                  <div
+                                        style="border-top:1px solid #000; width:100%; margin-top:40px;"
+                                    />
+                  <div><strong t-esc="emp.name" /></div>
+                  <div>Employee</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </t>
+      </t>
+    </t>
+  </template>
+</odoo>
