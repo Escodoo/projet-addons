@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="hr_payslip_run_view_form_projet_payroll_custom" model="ir.ui.view">
+        <field name="name">hr.payslip.run.form.projet.payroll.custom</field>
+        <field name="model">hr.payslip.run</field>
+        <field name="inherit_id" ref="payroll.hr_payslip_run_view_form" />
+        <field name="arch" type="xml">
+            <header position="inside">
+                <button
+                    name="action_open_payment_order_wizard"
+                    type="object"
+                    string="Gerar Ordem de Pagamento"
+                    class="oe_highlight"
+                />
+            </header>
+            <xpath expr="//group[@name='other']" position="inside">
+                <field name="payment_mode_id" />
+                <field name="payment_account_id" />
+                <field name="payment_analytic_account_id" />
+            </xpath>
+        </field>
+    </record>
+</odoo>
