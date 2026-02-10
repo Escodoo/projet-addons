@@ -15,6 +15,7 @@
     "data": [
         "views/hr_payslip_run_views.xml",
         "views/account_payment_line_create_views.xml",
+        "views/account_journal_views.xml",
     ],
     "demo": [
         "demo/payroll_payment_order_demo.xml",

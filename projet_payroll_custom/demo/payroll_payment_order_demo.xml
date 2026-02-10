@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo noupdate="1">
-    <!-- Contas para testes de folha -->
     <record id="account_salary_payable" model="account.account">
         <field name="name">Folha a Pagar (Demo)</field>
         <field name="code">999900</field>
@@ -33,10 +32,6 @@
         <field name="company_id" ref="base.main_company" />
     </record>
 
-    <!-- Lote de holerites de exemplo configurado para usar as contas demo.
-         Os holerites reais e os lançamentos contábeis continuarão sendo
-         gerados pelo módulo de folha da sua base, mas este lote já vem
-         pré-configurado para testar o botão de Ordem de Pagamento. -->
     <record id="payslip_run_demo_payroll_order" model="hr.payslip.run">
         <field name="name">Lote Folha Demo - Pagamento via Ordem</field>
         <field name="date_start">2026-01-01</field>

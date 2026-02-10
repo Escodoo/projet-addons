@@ -10,19 +10,25 @@ class HrPayslipRun(models.Model):
     payment_mode_id = fields.Many2one(
         "account.payment.mode",
         string="Payment Mode",
+        related="journal_id.payslip_run_payment_mode_id",
         domain=[
             ("payment_order_ok", "=", True),
             ("payment_type", "=", "outbound"),
         ],
+        readonly=True,
     )
     payment_account_id = fields.Many2one(
         "account.account",
         string="Payment Account",
+        related="journal_id.payslip_run_payment_account_id",
         domain=[("reconcile", "=", True)],
+        readonly=True,
     )
     payment_analytic_account_id = fields.Many2one(
         "account.analytic.account",
         string="Payment Analytic Account",
+        related="journal_id.payslip_run_payment_analytic_account_id",
+        readonly=True,
     )
 
     def action_open_payment_order_wizard(self):
