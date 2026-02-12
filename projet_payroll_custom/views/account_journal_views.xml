@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_account_journal_form_projet_payroll_custom" model="ir.ui.view">
+        <field name="name">account.journal.form.projet.payroll.custom</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.view_account_journal_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/notebook" position="inside">
+                <page name="payslip_run_defaults" string="Payslip Batch">
+                    <group>
+                        <group>
+                            <field name="payslip_run_payment_mode_id" />
+                            <field name="payslip_run_payment_account_id" />
+                            <field name="payslip_run_payment_analytic_account_id" />
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
