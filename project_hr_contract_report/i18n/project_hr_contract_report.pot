@@ -267,7 +267,6 @@ msgid "Common Employee Fields (emp)"
 msgstr ""
 
 #. module: project_hr_contract_report
-#: model:ir.model,name:project_hr_contract_report.model_hr_contract
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_signed_document__contract_id
 #: model:ir.model.fields,field_description:project_hr_contract_report.field_hr_contract_template_wizard__contract_id
 msgid "Contract"
@@ -375,6 +374,11 @@ msgstr ""
 #. module: project_hr_contract_report
 #: model_terms:ir.ui.view,arch_db:project_hr_contract_report.report_hr_contract_br
 msgid "Employee"
+msgstr ""
+
+#. module: project_hr_contract_report
+#: model:ir.model,name:project_hr_contract_report.model_hr_contract
+msgid "Employee Contract"
 msgstr ""
 
 #. module: project_hr_contract_report
