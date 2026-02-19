@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+  <record
+        id="supplier_contract_template_default"
+        model="supplier.contract.report.template"
+    >
+    <field name="name">Default Supplier Contract</field>
+    <field
+            name="report_template_id"
+            ref="project_supplier_contract_report.report_supplier_contract"
+        />
+    <field name="description">Default template for supplier contract printing.</field>
+    <field name="active" eval="True" />
+  </record>
+</odoo>
