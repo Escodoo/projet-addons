@@ -17,7 +17,13 @@ Projet Odoo Addons
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[project_hr_contract_report](project_hr_contract_report/) | 16.0.1.0.0 |  | Employment Contract Report with Template Selection and Signed Documents
+[projet_partner_bank_type](projet_partner_bank_type/) | 16.0.1.0.0 |  | This module adds a field in res.partner.bank to classify accounts as Expense or Salary type and also select the correct account in account.payment.line based on the journal
+[projet_payroll_custom](projet_payroll_custom/) | 16.0.1.0.0 |  | Integra lote de holerites com Ordens de Pagamento
 
 [//]: # (end addons)
 
