@@ -6,11 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-19 14:14+0000\n"
-"PO-Revision-Date: 2026-02-19 14:14+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -19,227 +16,222 @@ msgstr ""
 #. module: project_supplier_contract_report
 #: model:ir.actions.report,print_report_name:project_supplier_contract_report.action_report_supplier_contract
 msgid "'Supplier Contract - %s' % (object.name or 'No Reference')"
-msgstr "'Contrato de Fornecedor - %s' % (object.name or 'Sem referência')"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>company</code>: contract company (<code>res.company</code>)"
-msgstr "<code>company</code>: empresa do contrato (<code>res.company</code>)"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>contract.code</code> - Reference"
-msgstr "<code>contract.code</code> - Referência"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>contract.company_id.name</code> - Company"
-msgstr "<code>contract.company_id.name</code> - Empresa"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid ""
-"<code>contract.contract_line_ids.filtered(lambda l: not l.display_type)</"
-"code>"
+"<code>contract.contract_line_ids.filtered(lambda l: not "
+"l.display_type)</code>"
 msgstr ""
-"<code>contract.contract_line_ids.filtered(lambda l: not l.display_type)</"
-"code>"
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>contract.contract_type</code> - Type (sale/purchase)"
-msgstr "<code>contract.contract_type</code> - Tipo (sale/purchase)"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>contract.currency_id.name</code> - Currency"
-msgstr "<code>contract.currency_id.name</code> - Moeda"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>contract.date_end</code> - End date"
-msgstr "<code>contract.date_end</code> - Data final"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>contract.date_start</code> - Start date"
-msgstr "<code>contract.date_start</code> - Data inicial"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>contract.journal_id.name</code> - Journal"
-msgstr "<code>contract.journal_id.name</code> - Diário"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>contract.name</code> - Contract name"
-msgstr "<code>contract.name</code> - Nome do contrato"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>contract.note</code> - Notes"
-msgstr "<code>contract.note</code> - Observações"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>contract.partner_id.name</code> - Supplier"
-msgstr "<code>contract.partner_id.name</code> - Fornecedor"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>contract.payment_term_id.name</code> - Payment term"
-msgstr "<code>contract.payment_term_id.name</code> - Condição de pagamento"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>contract.recurring_next_date</code> - Next invoice date"
 msgstr ""
-"<code>contract.recurring_next_date</code> - Próxima data de faturamento"
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid ""
-"<code>contract</code>: current contract (model <code>contract.contract</"
-"code>)"
+"<code>contract</code>: current contract (model "
+"<code>contract.contract</code>)"
 msgstr ""
-"<code>contract</code>: contrato atual (model <code>contract.contract</code>)"
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>line.date_end</code> - Line end date"
-msgstr "<code>line.date_end</code> - Data final da linha"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>line.date_start</code> - Line start date"
-msgstr "<code>line.date_start</code> - Data inicial da linha"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>line.name</code> - Description"
-msgstr "<code>line.name</code> - Descrição"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>line.price_subtotal</code> - Subtotal"
-msgstr "<code>line.price_subtotal</code> - Subtotal"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>line.price_unit</code> - Unit price"
-msgstr "<code>line.price_unit</code> - Preço unitário"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>line.quantity</code> - Quantity"
-msgstr "<code>line.quantity</code> - Quantidade"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>o</code>: alias for <code>contract</code>"
-msgstr "<code>o</code>: apelido para <code>contract</code>"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "<code>partner</code>: contract supplier (<code>res.partner</code>)"
 msgstr ""
-"<code>partner</code>: fornecedor do contrato (<code>res.partner</code>)"
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.report_supplier_contract
 msgid "<strong>Company</strong>"
-msgstr "<strong>Empresa</strong>"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.report_supplier_contract
 msgid "<strong>Contract</strong>"
-msgstr "<strong>Contrato</strong>"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.report_supplier_contract
 msgid "<strong>End Date</strong>"
-msgstr "<strong>Data Final</strong>"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.report_supplier_contract
 msgid "<strong>Next Invoice Date</strong>"
-msgstr "<strong>Próxima Data de Faturamento</strong>"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.report_supplier_contract
 msgid "<strong>Start Date</strong>"
-msgstr "<strong>Data Inicial</strong>"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.report_supplier_contract
 msgid "<strong>Supplier</strong>"
-msgstr "<strong>Fornecedor</strong>"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_report_template__active
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_search
 msgid "Active"
-msgstr "Ativo"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_wizard_form
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "Common contract fields"
-msgstr "Campos comuns do contrato"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_template_wizard__contract_id
 msgid "Contract"
-msgstr "Contrato"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "Contract Template Formula Definition (QWeb)"
-msgstr "Definição de Fórmula de Modelo de Contrato (QWeb)"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_report_template__create_uid
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_template_wizard__create_uid
 msgid "Created by"
-msgstr "Criado por"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_report_template__create_date
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_template_wizard__create_date
 msgid "Created on"
-msgstr "Criado em"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_report_template__description
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.report_supplier_contract
 msgid "Description"
-msgstr "Descrição"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "Description of this template..."
-msgstr "Descrição deste modelo..."
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_report_template__display_name
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_template_wizard__display_name
 msgid "Display Name"
-msgstr "Nome de Exibição"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "Help"
-msgstr "Ajuda"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_report_template__id
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_template_wizard__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
@@ -247,122 +239,119 @@ msgid ""
 "In a QWeb template, you can write any code supported by QWeb.\n"
 "                  You can use expressions, conditions, and loops normally."
 msgstr ""
-"Em um template QWeb, você pode escrever qualquer código suportado pelo "
-"QWeb.\n"
-"                  Você pode usar expressões, condições e loops normalmente."
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_search
 msgid "Inactive"
-msgstr "Inativo"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_report_template____last_update
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_template_wizard____last_update
 msgid "Last Modified on"
-msgstr "Última Modificação em"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_report_template__write_uid
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_template_wizard__write_uid
 msgid "Last Updated by"
-msgstr "Última Atualização por"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_report_template__write_date
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_template_wizard__write_date
 msgid "Last Updated on"
-msgstr "Última Atualização em"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "Objects available in the report:"
-msgstr "Objetos disponíveis no relatório:"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_wizard_form
 msgid "Print"
-msgstr "Imprimir"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_form_inherit_report
 msgid "Print Contract"
-msgstr "Imprimir Contrato"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.report_supplier_contract
 msgid "Qty"
-msgstr "Qtd."
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.report_supplier_contract
 msgid "Recurring Lines"
-msgstr "Linhas Recorrentes"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "Recurring lines (example)"
-msgstr "Linhas recorrentes (exemplo)"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_report_template__report_template_id
 msgid "Report Template"
-msgstr "Modelo de Relatório"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model:ir.actions.act_window,name:project_supplier_contract_report.action_supplier_contract_template_wizard
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_wizard_form
 msgid "Select Supplier Contract Template"
-msgstr "Selecionar Modelo de Contrato de Fornecedor"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.report_supplier_contract
 msgid "Subtotal"
-msgstr "Subtotal"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model:ir.actions.report,name:project_supplier_contract_report.action_report_supplier_contract
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.report_supplier_contract
 msgid "Supplier Contract"
-msgstr "Contrato de Fornecedor"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model:ir.model,name:project_supplier_contract_report.model_supplier_contract_report_template
 msgid "Supplier Contract Report Template"
-msgstr "Modelo de Relatório de Contrato de Fornecedor"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "Supplier Contract Template"
-msgstr "Modelo de Contrato de Fornecedor"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model:ir.model,name:project_supplier_contract_report.model_supplier_contract_template_wizard
 msgid "Supplier Contract Template Selection Wizard"
-msgstr "Assistente de Seleção de Modelo de Contrato de Fornecedor"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model:ir.actions.act_window,name:project_supplier_contract_report.action_supplier_contract_template
 #: model:ir.ui.menu,name:project_supplier_contract_report.menu_supplier_contract_template
 msgid "Supplier Contract Templates"
-msgstr "Modelos de Contrato de Fornecedor"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_template_wizard__template_id
 msgid "Template"
-msgstr "Modelo"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model:ir.model.fields,field_description:project_supplier_contract_report.field_supplier_contract_report_template__name
 msgid "Template Name"
-msgstr "Nome do Modelo"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.view_supplier_contract_template_form
 msgid "To iterate over contract lines in the template:"
-msgstr "Para iterar as linhas do contrato no template:"
+msgstr ""
 
 #. module: project_supplier_contract_report
 #: model_terms:ir.ui.view,arch_db:project_supplier_contract_report.report_supplier_contract
 msgid "Unit Price"
-msgstr "Preço Unitário"
+msgstr ""
