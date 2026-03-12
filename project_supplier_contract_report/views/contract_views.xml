@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record id="action_supplier_contract_template_wizard" model="ir.actions.act_window">
+    <field name="name">Select Supplier Contract Template</field>
+    <field name="res_model">supplier.contract.template.wizard</field>
+    <field name="view_mode">form</field>
+    <field name="target">new</field>
+  </record>
+
+  <record id="action_supplier_contract_template" model="ir.actions.act_window">
+    <field name="name">Supplier Contract Templates</field>
+    <field name="res_model">supplier.contract.report.template</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="view_supplier_contract_form_inherit_report" model="ir.ui.view">
+    <field name="name">contract.contract.form.inherit.report.template</field>
+    <field name="model">contract.contract</field>
+    <field name="inherit_id" ref="contract.contract_contract_form_view" />
+    <field name="arch" type="xml">
+      <xpath expr="//header/button[@name='recurring_create_invoice']" position="after">
+        <button
+                    name="%(action_supplier_contract_template_wizard)d"
+                    string="Print Contract"
+                    type="action"
+                    context="{'default_contract_id': id}"
+                    attrs="{'invisible': ['|', '|', ('create_invoice_visibility', '=', False), ('generation_type', '!=', 'invoice'), ('contract_type', '!=', 'purchase')]}"
+                />
+      </xpath>
+    </field>
+  </record>
+
+  <record id="view_supplier_contract_template_tree" model="ir.ui.view">
+    <field name="name">supplier.contract.report.template.tree</field>
+    <field name="model">supplier.contract.report.template</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name" />
+        <field name="active" widget="boolean_toggle" />
+      </tree>
+    </field>
+  </record>
+
+  <record id="view_supplier_contract_template_form" model="ir.ui.view">
+    <field name="name">supplier.contract.report.template.form</field>
+    <field name="model">supplier.contract.report.template</field>
+    <field name="arch" type="xml">
+      <form string="Supplier Contract Template">
+        <sheet>
+          <group>
+            <group>
+              <field name="name" />
+              <field name="active" />
+            </group>
+            <group>
+              <field name="report_template_id" options="{'no_create': True}" />
+            </group>
+          </group>
+          <group>
+            <field name="description" placeholder="Description of this template..." />
+          </group>
+          <notebook>
+            <page string="Help" name="help">
+              <div style="margin-top: 4px;">
+                <h3>Contract Template Formula Definition (QWeb)</h3>
+                <p>
+                  In a QWeb template, you can write any code supported by QWeb.
+                  You can use expressions, conditions, and loops normally.
+                </p>
+                <p>Objects available in the report:</p>
+                <ul>
+                  <li>
+                    <code>contract</code>: current contract (model <code
+                                        >contract.contract</code>)
+                  </li>
+                  <li>
+                    <code>o</code>: alias for <code>contract</code>
+                  </li>
+                  <li>
+                    <code>company</code>: contract company (<code>res.company</code>)
+                  </li>
+                  <li>
+                    <code>partner</code>: contract supplier (<code>res.partner</code>)
+                  </li>
+                </ul>
+                <h3>Common contract fields</h3>
+                <ul>
+                  <li><code>contract.name</code> - Contract name</li>
+                  <li><code>contract.code</code> - Reference</li>
+                  <li><code>contract.contract_type</code> - Type (sale/purchase)</li>
+                  <li><code>contract.partner_id.name</code> - Supplier</li>
+                  <li><code>contract.company_id.name</code> - Company</li>
+                  <li><code>contract.date_start</code> - Start date</li>
+                  <li><code>contract.date_end</code> - End date</li>
+                  <li><code>contract.recurring_next_date</code> - Next invoice date</li>
+                  <li><code>contract.payment_term_id.name</code> - Payment term</li>
+                  <li><code>contract.journal_id.name</code> - Journal</li>
+                  <li><code>contract.currency_id.name</code> - Currency</li>
+                  <li><code>contract.note</code> - Notes</li>
+                </ul>
+                <h3>Recurring lines (example)</h3>
+                <p>
+                  To iterate over contract lines in the template:
+                </p>
+                <p>
+                  <code
+                                    >contract.contract_line_ids.filtered(lambda l: not l.display_type)</code>
+                </p>
+                <ul>
+                  <li><code>line.name</code> - Description</li>
+                  <li><code>line.quantity</code> - Quantity</li>
+                  <li><code>line.price_unit</code> - Unit price</li>
+                  <li><code>line.price_subtotal</code> - Subtotal</li>
+                  <li><code>line.date_start</code> - Line start date</li>
+                  <li><code>line.date_end</code> - Line end date</li>
+                </ul>
+              </div>
+            </page>
+          </notebook>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_supplier_contract_template_search" model="ir.ui.view">
+    <field name="name">supplier.contract.report.template.search</field>
+    <field name="model">supplier.contract.report.template</field>
+    <field name="arch" type="xml">
+      <search>
+        <field name="name" />
+        <filter string="Active" name="active" domain="[('active', '=', True)]" />
+        <filter string="Inactive" name="inactive" domain="[('active', '=', False)]" />
+      </search>
+    </field>
+  </record>
+
+  <record id="view_supplier_contract_template_wizard_form" model="ir.ui.view">
+    <field name="name">supplier.contract.template.wizard.form</field>
+    <field name="model">supplier.contract.template.wizard</field>
+    <field name="arch" type="xml">
+      <form string="Select Supplier Contract Template">
+        <group>
+          <field name="contract_id" readonly="1" />
+          <field name="template_id" options="{'no_create': True}" />
+        </group>
+        <footer>
+          <button
+                        string="Print"
+                        name="action_print"
+                        type="object"
+                        class="btn-primary"
+                    />
+          <button string="Cancel" class="btn-secondary" special="cancel" />
+        </footer>
+      </form>
+    </field>
+  </record>
+
+  <menuitem
+        id="menu_supplier_contract_template"
+        name="Supplier Contract Templates"
+        parent="contract.menu_config_contract"
+        action="action_supplier_contract_template"
+        sequence="2"
+    />
+</odoo>

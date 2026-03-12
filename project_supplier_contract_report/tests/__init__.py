@@ -1,0 +1,2 @@
+from . import test_supplier_contract_template
+from . import test_supplier_contract_template_wizard
